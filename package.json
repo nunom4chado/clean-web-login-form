@@ -1,0 +1,28 @@
+{
+  "name": "clean-web-login-form",
+  "version": "1.0.0",
+  "description": "Free sketch resource converted to HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch scss -o public/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunom4chado/clean-web-login-form.git"
+  },
+  "keywords": [
+    "sketch",
+    "free",
+    "login"
+  ],
+  "author": "Nuno Machado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nunom4chado/clean-web-login-form/issues"
+  },
+  "homepage": "https://github.com/nunom4chado/clean-web-login-form#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
