@@ -6,6 +6,6 @@ You can find the sketch file [here](https://www.sketchappsources.com/free-source
 
 Design credits goes to [Kryston Schwarze](https://www.sketchappsources.com/contributor/krystonschwarze)
 
-![phone screenshot](https://github.com/nunom4chado/clean-web-login-form/blob/master/screenshots/phone.png)
-![tablet screenshot](https://github.com/nunom4chado/clean-web-login-form/blob/master/screenshots/tablet.png)
+![phone screenshot](https://github.com/nunom4chado/clean-web-login-form/blob/master/screenshots/phone.png =400)
+![tablet screenshot](https://github.com/nunom4chado/clean-web-login-form/blob/master/screenshots/tablet.png =600)
 ![desktop screenshot](https://github.com/nunom4chado/clean-web-login-form/blob/master/screenshots/desktop.png)
