@@ -85,7 +85,8 @@ body {
         color: #29b1cc;
         flex: 1;
         margin-right: 0.9rem;
-        cursor: pointer; }
+        cursor: pointer;
+        background: #fff; }
         .login-body__container .btn-group .btn--primary {
           background: #29b1cc;
           color: #fff;
