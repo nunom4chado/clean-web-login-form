@@ -4,6 +4,12 @@ $text-color: #6b6c6f;
 $heading-color: #252529;
 $primary-color: #29b1cc;
 
+@mixin large-devices {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,6 +20,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: $text-color;
+  display: flex;
 }
 
 .login {
@@ -21,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  flex: 1;
 }
 
 .login-header {
@@ -183,6 +191,61 @@ body {
 
       &--active {
         color: $text-color;
+      }
+    }
+  }
+}
+
+.slider {
+  display: none;
+
+  @include large-devices {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 70%,
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../img/photo.png);
+
+    &__row {
+      display: flex;
+      padding: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+
+      .owner {
+        display: flex;
+        align-items: center;
+
+        &__details {
+          padding-left: 1rem;
+        }
+
+        &__profile {
+          color: #ccc;
+          font-weight: 400;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    &__list {
+      list-style: none;
+    }
+
+    &__item {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 10rem;
+      background: #fff;
+
+      &--active {
+        width: 30px;
       }
     }
   }

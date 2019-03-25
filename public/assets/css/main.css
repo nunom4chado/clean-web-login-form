@@ -8,13 +8,15 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: #6b6c6f; }
+  color: #6b6c6f;
+  display: flex; }
 
 .login {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+  flex: 1; }
 
 .login-header {
   display: flex;
@@ -125,3 +127,37 @@ body {
       color: #b8b9bb; }
       .login-fotter .lang__option--active {
         color: #6b6c6f; }
+
+.slider {
+  display: none; }
+  @media (min-width: 900px) {
+    .slider {
+      display: flex;
+      flex-direction: column-reverse;
+      flex: 1;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7)), url(../img/photo.png); }
+      .slider__row {
+        display: flex;
+        padding: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff; }
+        .slider__row .owner {
+          display: flex;
+          align-items: center; }
+          .slider__row .owner__details {
+            padding-left: 1rem; }
+          .slider__row .owner__profile {
+            color: #ccc;
+            font-weight: 400;
+            font-size: 0.7rem; }
+      .slider__list {
+        list-style: none; }
+      .slider__item {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 10rem;
+        background: #fff; }
+        .slider__item--active {
+          width: 30px; } }
