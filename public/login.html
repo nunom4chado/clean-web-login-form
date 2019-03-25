@@ -4,8 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="login">
+      <header class="login-header">
+        <div class="login-header__brand">
+          <a href="#">
+            <img src="assets/img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <nav class="login-header__nav">
+          <ul class="main-nav">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Home</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="login-body">
+        <div class="login-body__container">
+          <p class="login-body__slogan">Start your personal photo experience</p>
+          <h1 class="login-body__header">Login your account</h1>
+          <form action="">
+            <div class="input-group">
+              <label for="email" class="input-group__label">E-mail</label>
+              <input
+                class="input-group__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+              />
+              <i class="input-group__icon far fa-envelope"></i>
+            </div>
+            <div class="input-group">
+              <label for="password" class="input-group__label">Password</label>
+              <input
+                class="input-group__input"
+                type="password"
+                name="email"
+                id="password"
+                placeholder="Your password"
+              />
+              <i class="input-group__icon fas fa-key"></i>
+            </div>
+            <div class="btn-group">
+              <button class="btn">Register</button>
+              <button class="btn btn--primary" type="submit">Login</button>
+            </div>
+
+            <div class="help-section">
+              <div>
+                <input
+                  id="remember-me"
+                  type="checkbox"
+                  name="remember"
+                  value="remember"
+                />
+                <label for="remember-me">Remember me</label>
+              </div>
+              <div>
+                <a href="#" class="help-section__link">Forgot Password?</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="login-fotter">
+        <ul class="login-fotter__links">
+          <li class="login-fotter__item">
+            <a href="#" class="login-fotter__link">Impress</a>
+          </li>
+          <li class="login-fotter__item">
+            <a href="#" class="login-fotter__link">Privacy</a>
+          </li>
+        </ul>
+        <ul class="lang">
+          <li class="lang__item">
+            <a href="#" class="lang__option">DE</a>
+          </li>
+          <li class="lang__item">
+            <a href="#" class="lang__option lang__option--active">EN</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </body>
 </html>

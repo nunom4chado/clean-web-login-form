@@ -1,3 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
+
+$text-color: #6b6c6f;
+$heading-color: #252529;
+$primary-color: #29b1cc;
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: $text-color;
+}
+
+.login {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+
+  .main-nav {
+    list-style: none;
+    font-weight: 600;
+
+    &__item {
+      display: inline;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+.login-body {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__slogan {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  &__header {
+    font-weight: 600;
+    color: $heading-color;
+    font-size: 1.9rem;
+    margin: 1.5rem 0;
+  }
+
+  &__container {
+    flex: auto;
+    max-width: 350px;
+
+    .input-group {
+      position: relative;
+
+      &__label {
+        display: block;
+        padding-left: 0.7rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.7rem;
+      }
+
+      &__input {
+        width: 100%;
+        padding-left: 3rem;
+        border-radius: 50px;
+        border: 1px solid lighten($text-color, 45%);
+        height: 3rem;
+        font-size: 1.1rem;
+
+        &::placeholder {
+          color: lighten($text-color, 40%);
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid $primary-color;
+          box-shadow: 0 0 5px rgba($primary-color, 0.5);
+        }
+      }
+
+      &__icon {
+        position: absolute;
+        top: 2.9rem;
+        left: 1.2rem;
+        color: lighten($text-color, 45%);
+      }
+    }
+
+    .btn-group {
+      margin-top: 2rem;
+      display: flex;
+
+      .btn {
+        border: 2px solid $primary-color;
+        border-radius: 10rem;
+        font-size: 1.1rem;
+        padding: 0.9rem;
+        color: $primary-color;
+        flex: 1;
+        margin-right: 0.9rem;
+        cursor: pointer;
+
+        &--primary {
+          background: $primary-color;
+          color: #fff;
+          box-shadow: 0 10px 20px rgba($primary-color, 0.3);
+          margin-right: 0;
+          margin-left: 0.9rem;
+        }
+      }
+    }
+
+    .help-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.6rem;
+
+      &__link {
+        color: $text-color;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.login-fotter {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 15px 0;
+  font-weight: 500;
+
+  &__links {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline;
+  }
+
+  &__item:not(:first-of-type)::before {
+    content: "•";
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  .lang {
+    list-style: none;
+
+    &__item {
+      display: inline;
+    }
+
+    &__item:not(:first-of-type)::before {
+      content: "•";
+    }
+
+    &__option {
+      text-decoration: none;
+      color: lighten($text-color, 30%);
+
+      &--active {
+        color: $text-color;
+      }
+    }
+  }
 }
